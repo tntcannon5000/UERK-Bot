@@ -1,0 +1,4 @@
+flask
+magnum
+discord-interactions
+asgiref

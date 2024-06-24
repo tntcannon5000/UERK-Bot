@@ -1,0 +1,19 @@
+- name: statuscheck
+  description: Check if the bot is online
+
+
+- name: echo
+  description: Make the bot say something
+  options:
+    - name: message
+      description: The message to say
+      type: 3 # string
+      required: true
+
+- name: shitpost
+  description: Make the bot shitpost
+  options:
+    - name: message
+      description: The message to say
+      type: 3 # string
+      required: false

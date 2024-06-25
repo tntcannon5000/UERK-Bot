@@ -1,0 +1,14 @@
+# Use the official Python 3.11 image as the base image
+FROM public.ecr.aws/lambda/python:3.11 AS build-env
+
+RUN yum update -y && \
+    yum install -y gcc python3-devel
+
+# Set the working directory inside the image
+WORKDIR /var/task
+
+# Copy ONLY requirements.txt, NOT your function code!
+COPY requirements.txt ./
+
+# Install dependencies
+RUN pip install -r requirements.txt -t ./dependencies

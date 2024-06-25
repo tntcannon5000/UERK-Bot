@@ -1,14 +1,15 @@
 import os
-from magnum import Magnum
 from flask import Flask, jsonify, request
 from discord_interactions import verify_key_decorator
 from asgiref.wsgi import WsgiToAsgi
+from mangum import Mangum
 
 
 DISCORD_PUBLIC_KEY = os.getenv("DISCORD_PUBLIC_KEY")
 app = Flask(__name__)
+app.config["DEBUG"] = True  # Add this line
 asgi_app = WsgiToAsgi(app)
-handler = Magnum(asgi_app)
+handler = Mangum(asgi_app)
 
 
 
@@ -24,6 +25,7 @@ def interact(raw_request):
         response_content = {
             "type": 1
         }
+
     else:
         # Preparing incoming data for commands
         data = raw_request["data"]

@@ -12,8 +12,3 @@
 
 - name: shitpost
   description: Make the bot shitpost
-  options:
-    - name: message
-      description: The message to say
-      type: 3 # string
-      required: false

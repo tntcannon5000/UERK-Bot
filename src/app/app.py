@@ -32,15 +32,17 @@ def interact(raw_request):
         command_name = data["name"]
 
         # Checking which command, and executing the one that matches
-        if command_name == "echo":
+        if command_name == "shitpost":
+            response_content = "temp"
+            
+
+        elif command_name == "echo":
             original_response = data["options"][0]["value"]
             response_content = f"Echoing: {original_response}"
 
         elif command_name == "statuscheck":
             response_content = "The bot is currently online and functioning properly."
 
-        elif command_name == "shitpost":
-            response_content = "temp"
         
         # Building the response json object
         response_data = {   

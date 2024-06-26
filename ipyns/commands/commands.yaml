@@ -1,7 +1,6 @@
 - name: statuscheck
   description: Check if the bot is online
 
-
 - name: echo
   description: Make the bot say something
   options:

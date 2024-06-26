@@ -2,3 +2,8 @@ flask
 mangum
 discord-interactions
 asgiref
+csv
+random
+io
+boto3
+requests

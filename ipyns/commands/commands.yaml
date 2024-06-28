@@ -11,3 +11,6 @@
 
 - name: shitpost
   description: Make the bot shitpost
+
+- name: bean
+  description: Make the bot bean

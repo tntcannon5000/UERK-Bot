@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project
+# UERK-Bot
 
-This is a blank project for CDK development with TypeScript.
+UERK-Bot is a Discord bot built using Amazon's serverless Lambda infrastructure. It is designed to provide various utility functions for two private Discord servers, including image retrieval features and more.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Features
 
-## Useful commands
+- **Image Retrieval**: Fetches and displays images based on user queries.
+- **Server-Specific Utilities**: Custom functions tailored to two private Discord servers.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+
+
+## TBD:
+- Integrate clash sheet management from command line
+- Integrate race querying based on UID for clash nodes
+- - Resolve bug where image commands successfully send image while throwing a timeout error. 

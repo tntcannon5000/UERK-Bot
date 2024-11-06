@@ -11,5 +11,6 @@ UERK-Bot is a Discord bot built using Amazon's serverless Lambda infrastructure.
 
 ## TBD:
 - Integrate clash sheet management from command line
+- Integrate cmd to display clash sheet, and integrate cmd to display self-posting PB times sheet per race
 - Integrate race querying based on UID for clash nodes
 - - Resolve bug where image commands successfully send image while throwing a timeout error. 
